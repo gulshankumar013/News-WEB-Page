@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 11vh;
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.webpage {
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.webpage nav .logo {
+    height: 90%;
+    width: 8%;
+    /* border: 1px solid; */
+}
+
+.webpage nav ul {
+    height: 90%;
+    width: 30%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.webpage nav ul li {
+    height: 80%;
+    width: 40%;
+    border: 1px solid;
+}
+
+.webpageBody {
+    height: 178vh;
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-areas: 
+    "sports sports sports sports"
+     "health health health health"
+    "science science science science"
+    "bussiness bussiness bussiness bussiness"
+    "politics politics politics politics";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.webpage article  {
+    height: 50vh;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 10px;
+
+}
+
+.sec1 {
+    grid-area: sports;
+}
+
+.sec2 {
+    border: 1px solid;
+    grid-area: health;
+}
+
+.sec3 {
+    grid-area: science;
+}
+
+.sec4 {
+    grid-area: bussiness;
+}
+
+.sec5 {
+    grid-area: politics;
+}
+.cardImg{
+    width: 250px;
+    height: 50%;
+    padding: 1px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 10px black);
+   
+}
+
+/* inner card */
+
+ .cardDiv{
+    background-color:rgb(151, 161, 167);
+    border-radius: 10px;
+    height: 95%;
+    width: 300px;
+    border: 1px solid;
+    padding: 8px;
+  
+}
+
+.cardDiv:hover {
+    transform: scale(1.05); 
+    transition-duration: 800ms;
+}
+.card h3{
+    word-break: break-all;
+}
+.popup{ 
+    padding: 10px;
+    position: fixed;
+    height: 500px;
+    width: 600px;
+    border: 1px;
+    left: 450px;
+    top: 150px;
+    border-radius: 2%;
+    justify-content: end;
+    display: none;
+    flex-wrap: wrap;
+    background-color:gray; 
+    z-index: 100;
+
+}
+.button{
+    padding: 8px 50px;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 250px;
+    margin-bottom: 25px;
+    background-color: rgb(4,145,170);
+
+
+}
+.button:hover{
+    background-color: azure;
+}
+
+.cross{
+    cursor: pointer;
+    margin-left: 550px;
+    font-size: large;
+    font-weight: 900;
+   
+}
+.cross:hover{
+    color: black;
+   
+}
+.nav2{
+    height: 85%;
+    width: 100%;
+    /* border: 3px solid; */
+    border-radius: 10%;
+}
+.popupCard1{
+    margin-left: 45px;
+    height: 300px;
+    width: 85%;
+   border-radius: 2%;
+   
+   filter: drop-shadow(0px 0px 10px black);
+}
+
+body{
+background-color: black;
+}
+.Innercard{
+    border-radius: 4px;
+   background-color: rgb(202, 195, 90);
+}
+.Innercard2{
+    border-radius: 4px;
+background-color:rgb(199, 209, 55) ;
+}
+.Innercard3{
+    border-radius: 4px;
+    background-color: rgb(234, 236, 65);
+    font-family:sans-serif;
+}
+.Innercard4{
+    background-color:rgb(4, 145, 170);
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-family: sans-serif;
+    font-weight:700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cardtitle2{
+    background-color:blu;
+    margin-top: 60px;
+    display: inline;
+    font-weight: 500;
+    color: rgb(204, 217, 228);
+    font-size: small;
+}
+.cardtitle4{
+    
+}
+.logo1{
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    margin-left: -15px;
+}
+.Login-Button{
+    font-weight: 600;
+    font-size: medium;
+    padding: 12px 50px;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 60px;
+    background-color:rgb(195,195,195);
+}
+.Login-Button:hover{
+    background-color: aliceblue;
+}
+
+.Signup-Button{
+    font-weight: 600;
+    font-size: medium;
+    padding: 12px 50px;
+    display: flex;
+    border-radius: 5px;
+    margin-left: 60px;
+    background-color:rgb(195,195,195);
+}
+.Signup-Button:hover{
+    background-color: aliceblue;
+}
+.nav1{
+    background-color: rgb(102, 108, 112);
+}
+.nav-search-input{
+    border: none;
+    outline: none;
+    height: 45px;
+    width: 500px;
+    margin-left: 230px;
+    border-radius: 5px;
+}
+.nav-search-icon{
+    max-width: 45px;
+    padding: 8px;
+    background: #ffd64f;
+    border-radius: 0 4px 4px 0;
+    margin-right: 150px;
+}
